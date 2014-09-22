@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Medvind_StaticBlockTool>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Medvind_StaticBlockTool>
+    </modules>
+</config>

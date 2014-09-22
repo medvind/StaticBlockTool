@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Medvind_StaticBlockTool>
+            <version>0.1.0</version>
+        </Medvind_StaticBlockTool>
+    </modules>
+    <global>
+        <blocks>
+            <medvind_staticblock>
+                <class>Apparatus_ExportStaticBlocks_Block</class>
+            </medvind_staticblock>
+            <adminhtml>
+                <rewrite>
+                    <!-- <cms_block>Apparatus_ExportStaticBlocks_Block_Adminhtml_Cms_Block</cms_block> -->
+                    <cms_block_grid>Medvind_StaticBlockTool_Block_Adminhtml_Cms_Block_Grid</cms_block_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <models>
+            <medvind_staticblock>
+                <class>Medvind_StaticBlockTool_Model</class>
+            </medvind_staticblock>
+        </models>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Medvind_StaticBlockTool before="Mage_Adminhtml">Medvind_StaticBlockTool</Medvind_StaticBlockTool>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
