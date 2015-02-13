@@ -8,11 +8,10 @@
     <global>
         <blocks>
             <medvind_staticblock>
-                <class>Apparatus_ExportStaticBlocks_Block</class>
+                <class>Medvind_StaticBlockTool_Block</class>
             </medvind_staticblock>
             <adminhtml>
                 <rewrite>
-                    <!-- <cms_block>Apparatus_ExportStaticBlocks_Block_Adminhtml_Cms_Block</cms_block> -->
                     <cms_block_grid>Medvind_StaticBlockTool_Block_Adminhtml_Cms_Block_Grid</cms_block_grid>
                 </rewrite>
             </adminhtml>
